@@ -1,0 +1,416 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BAMSA</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="bg-slate-100 dark:bg-slate-900 dark:text-white">
+    <!-- Header Section -->
+    <header class="bg-blue-950 text-white sticky top-0 z-10">
+      <!-- For Larger Screens -->
+      <div
+        class="container mx-auto py-4 px-6 flex justify-between items-center"
+      >
+        <!-- logo -->
+        <div class="font-bold text-4xl lg:text-5xl">&#129658; BAMSA</div>
+
+        <!-- Navigation Menu -->
+        <nav class="hidden md:flex space-x-5 lg:space-x-6 text-2xl">
+          <a href="#hero" class="hover:text-blue-200">Home</a>
+          <a href="#about" class="hover:text-blue-200">About</a>
+          <a href="#leadership" class="hover:text-blue-200">Leadership</a>
+          <a href="#events" class="hover:text-blue-200">Events</a>
+          <a href="#contact" class="hover:text-blue-200">Contact</a>
+        </nav>
+
+        <button
+          id="menu_btn"
+          class="relative w-6 h-6 transition-all duration-500 md:hidden focus:outline-none"
+        >
+          <span
+            class="hamburger-top absolute w-6 h-0.5 bg-white transform rotate-0 top-0 left-0 transition-all duration-500"
+          ></span>
+          <span
+            class="hamburger-middle absolute w-6 h-0.5 bg-white transform rotate-0 top-0 left-0 transition-all duration-500 translate-y-2"
+          ></span>
+          <span
+            class="hamburger-bottom absolute w-6 h-0.5 bg-white transform rotate-0 top-0 left-0 transition-all duration-500 translate-y-4"
+          ></span>
+        </button>
+      </div>
+
+      <!-- Mobile Menu -->
+      <div
+        id="menu"
+        class="absolute flex-col items-center self-end hidden py-8 mt-2 space-y-6 font-bold bg-blue-950 sm:w-auto sm:self-center left-6 right-6 drop-shadow-md md:hidden"
+      >
+        <a href="#hero" class="hover:text-blue-200">Home</a>
+        <a href="#about" class="hover:text-blue-200">About</a>
+        <a href="#leadership" class="hover:text-blue-200">Leadership</a>
+        <a href="#events" class="hover:text-blue-200">Events</a>
+        <a href="#contact" class="hover:text-blue-200">Contact</a>
+      </div>
+    </header>
+
+    <!-- Main Section -->
+    <main class="container mx-auto">
+      <!-- Hero Section -->
+      <section id="hero" class="scroll-mt-20">
+        <div
+          class="mt-4 md:mt-8 flex gap-6 flex-col-reverse items-center justify-between p-6 md:flex-row"
+        >
+          <div
+            class="flex flex-col gap-4 text-center md:text-left md:w-4/6 lg:w-2/3"
+          >
+            <p id="greeting" class="text-4xl font-bold mb-4"></p>
+            <p class="text-2xl">
+              We extend a warm and heartening welcome to all our esteemed
+              visitors, whether you are a dedicated healthcare professional, an
+              aspiring medical student, or simply someone intigued by the world
+              of medicine, you have found your home here At Bauchi State Medical
+              Students Association, we believe that healthcare is a
+              collaborative journey. Our doors are open to everyone who shares a
+              passion for improving the health and well-being of individuals and
+              communities.
+            </p>
+          </div>
+          <div
+            class="w-3/4 shadow-2xl dark:border-2 dark:border-dashed dark:border-white p-0.5 rounded-full md:w-2/6 lg:w-1/3 xl:w-1/4"
+          >
+            <img
+              src="./images/bamsa-logo.jpg"
+              alt="Bamsa Logo"
+              class="rounded-full"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Mission and vission session -->
+      <section class="p-6 mt-5">
+        <div
+          class="flex flex-col justify-between space-y-4 md:space-y-0 md:flex-row md:space-x-4 lg:space-x-6"
+        >
+          <div
+            class="p-2 md:w-1/2 shadow-xl rounded-2xl bg-blue-50 hover:bg-blue-100 dark:bg-slate-800 dark:hover:bg-slate-900"
+          >
+            <img
+              src="./images/icons/mission.png"
+              class="h-20 w-20 mb-4"
+              alt=""
+            />
+            <p class="text-3xl font-bold my-4">Our Mission:</p>
+            <p class="text-xl">
+              To empower Bauchi State's medical students, fostering excellence,
+              leadership, and community service for a healthier tomorrow.
+            </p>
+          </div>
+          <div
+            class="p-2 md:w-1/2 shadow-xl rounded-2xl bg-blue-50 hover:bg-blue-100 dark:bg-slate-800 dark:hover:bg-slate-900"
+          >
+            <img
+              src="./images/icons/vision.png"
+              class="h-20 w-20 mb-4"
+              alt=""
+            />
+            <p class="text-3xl font-bold my-4">Our Mission:</p>
+            <p class="text-xl">
+              To lead in shaping a future of innovative, inclusive, and
+              compassionate healthcare for Bauchi State and beyond.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="container scroll-mt-14 mx-auto mt-20 p-4">
+        <h2 class="text-4xl text-center my-10 font-bold">About Us</h2>
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3">
+          <a href="./blank.html" target="_blank">
+            <div
+              class="flex flex-col items-center gap-4 shadow-xl rounded-2xl hover:bg-blue-100 bg-blue-50 dark:bg-slate-800 m-2 mt-8 p-4 dark:hover:bg-slate-900"
+            >
+              <img
+                src="./images/icons/history.png"
+                alt=""
+                class="-mt-9 w-20 h-20"
+              />
+
+              <div class="p-4 text-center">
+                <h3 class="text-2xl font-bold mb-2">History</h3>
+                <p class="text-xl">
+                  Embark on a Voyage Through Time: Tracing the Remarkable
+                  History of the Bauchi State Medical Students' Association.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="./blank.html" target="_blank">
+            <div
+              class="flex flex-col items-center gap-4 shadow-xl rounded-2xl hover:bg-blue-100 bg-blue-50 dark:bg-slate-800 m-2 mt-8 p-4 dark:hover:bg-slate-900"
+            >
+              <img
+                src="./images/icons/target.png"
+                alt=""
+                class="-mt-9 w-20 h-20"
+              />
+
+              <div class="p-4 text-center">
+                <h3 class="text-2xl font-bold mb-2">Values and Goals</h3>
+                <p class="text-xl">
+                  Guiding Principles: Delving into the Core Values and
+                  Aspirations of Bauchi State Medical Students' Association.
+                </p>
+              </div>
+            </div>
+          </a>
+          <a href="./blank.html" target="_blank">
+            <div
+              class="flex flex-col items-center gap-4 shadow-xl rounded-2xl hover:bg-blue-100 bg-blue-50 dark:bg-slate-800 m-2 mt-8 p-4 dark:hover:bg-slate-900"
+            >
+              <img
+                src="./images/icons/opportunity.png"
+                alt=""
+                class="-mt-9 w-20 h-20"
+              />
+
+              <div class="p-4 text-center">
+                <h3 class="text-2xl font-bold mb-2">Achievements</h3>
+                <p class="text-xl">
+                  Clelebrating Triumphs: Unveiling the Achevements and
+                  Milestones of Bauchi State Medical Students' Association.
+                </p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <!-- Leadership Section -->
+      <section id="leadership" class="container scroll-mt-14 mt-20 mx-auto p-6">
+        <h2 class="text-4xl text-center my-10 font-bold">Leadership</h2>
+        <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-4">
+          <div
+            class="flex flex-col bg-blue-50 mb-4 p-6 w-4/5 rounded-2xl mx-auto dark:bg-slate-800 shadow-lg space-y-4 sm:flex-row md:flex-col lg:flex-row md:w-full"
+          >
+            <img
+              class="block mx-auto w-32 h-32 rounded-full mb-8 sm:mb-0 md:mb-8 lg:mb-0 sm:mx-0 sm:mr-4 md:mx-auto lg:mx-0 lg:mr-4 sm:shrink-0"
+              src="./images/exco/abdurrahman.png"
+              alt="Abdurrahman Sani"
+            />
+            <div
+              class="space-y-3 text-center sm:text-left md:text-center lg:text-left"
+            >
+              <p class="text-xl text-black font-semibold dark:text-white">
+                Abdurrahman Sani
+              </p>
+              <p>MBBS UDUS, 400L</p>
+              <p class="text-slate-500 font-medium dark:text-slate-300">
+                Asst. Secretary General
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col bg-blue-50 mb-4 p-6 w-4/5 rounded-2xl mx-auto dark:bg-slate-800 shadow-lg space-y-4 sm:flex-row md:flex-col lg:flex-row md:w-full"
+          >
+            <img
+              class="block mx-auto w-32 h-32 rounded-full mb-8 sm:mb-0 md:mb-8 lg:mb-0 sm:mx-0 sm:mr-4 md:mx-auto lg:mx-0 lg:mr-4 sm:shrink-0"
+              src="./images/exco/aminuMuhammad.jpg"
+              alt="Muhammad Aminu"
+            />
+            <div
+              class="space-y-3 text-center sm:text-left md:text-center lg:text-left"
+            >
+              <p class="text-xl text-black font-semibold dark:text-white">
+                AMINU, Muhammad Fatihu
+              </p>
+              <p>BDS UNIMAID, 500L</p>
+              <p class="text-slate-500 font-medium dark:text-slate-300">
+                Director of Sports
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col bg-blue-50 mb-4 p-6 w-4/5 rounded-2xl mx-auto dark:bg-slate-800 shadow-lg space-y-4 sm:flex-row md:flex-col lg:flex-row md:w-full"
+          >
+            <img
+              class="block mx-auto w-32 h-32 rounded-full mb-8 sm:mb-0 md:mb-8 lg:mb-0 sm:mx-0 sm:mr-4 md:mx-auto lg:mx-0 lg:mr-4 sm:shrink-0"
+              src="./images/exco/muhammadAhmadRabiu.jpg"
+              alt="Muhammad Ahmad"
+            />
+            <div
+              class="space-y-3 text-center sm:text-left md:text-center lg:text-left"
+            >
+              <p class="text-xl text-black font-semibold dark:text-white">
+                AHMAD, Muhammad Rabi'u
+              </p>
+              <p>MBBS ABU, 400L</p>
+              <p class="text-slate-500 font-medium dark:text-slate-300">
+                PRO II
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col bg-blue-50 mb-4 p-6 w-4/5 rounded-2xl mx-auto dark:bg-slate-800 shadow-lg space-y-4 sm:flex-row md:flex-col lg:flex-row md:w-full"
+          >
+            <img
+              class="block mx-auto w-32 h-32 rounded-full mb-8 sm:mb-0 md:mb-8 lg:mb-0 sm:mx-0 sm:mr-4 md:mx-auto lg:mx-0 lg:mr-4 sm:shrink-0"
+              src="./images/exco/bitrusMathias.jpg"
+              alt="Mathias Bitrus"
+            />
+            <div
+              class="space-y-3 text-center sm:text-left md:text-center lg:text-left"
+            >
+              <p class="text-xl text-black font-semibold dark:text-white">
+                BITRUS, Mathias
+              </p>
+              <p>BDS UNIMAID, 600L</p>
+              <p class="text-slate-500 font-medium dark:text-slate-300">
+                Business Director
+              </p>
+            </div>
+          </div>
+          <div
+            class="flex flex-col bg-blue-50 mb-4 p-6 w-4/5 rounded-2xl mx-auto dark:bg-slate-800 shadow-lg space-y-4 sm:flex-row md:flex-col lg:flex-row md:w-full"
+          >
+            <img
+              class="block mx-auto w-32 h-32 rounded-full mb-8 sm:mb-0 md:mb-8 lg:mb-0 sm:mx-0 sm:mr-4 md:mx-auto lg:mx-0 lg:mr-4 sm:shrink-0"
+              src="./images/exco/aliyuHalilu.jpg"
+              alt="Aliyu Halilu"
+            />
+            <div
+              class="space-y-3 text-center sm:text-left md:text-center lg:text-left"
+            >
+              <p class="text-xl text-black font-semibold dark:text-white">
+                HALILU, Aliyu
+              </p>
+              <p>MBBS ABU, 400L</p>
+              <p class="text-slate-500 font-medium dark:text-slate-300">
+                Welfare Director
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Events Section -->
+      <section id="events" class="scroll-mt-20 container px-6 mx-auto mt-20">
+        <h2 class="text-4xl text-center my-10 font-bold">Upcoming Events</h2>
+        <div
+          class="flex flex-col gap-y-2 mb-4 sm:flex-row sm:justify-around sm:gap-8"
+        >
+          <div
+            class="w-11/12 mx-auto mb-4 bg-blue-50 sm:flex-grow dark:bg-slate-800"
+          >
+            <img
+              class="h-48 w-full lg:h-56"
+              src="./images/health_week.jpeg"
+              alt=""
+            />
+            <p class="text-2xl text-center p-4">
+              Embark on a Journey to Well-being: Join us for our Anual Health
+              Week -Nourishing Mind, Body, and Community
+            </p>
+          </div>
+          <div
+            class="w-11/12 p-8 mx-auto bg-blue-50 flex flex-col items-start justify-between space-y-4 dark:bg-slate-800"
+          >
+            <p class="text-2xl font-semibold mb-2">Annual Health Week</p>
+            <p class="text-2xl font-semibold">&#x1F550; 22nd Feb 2024</p>
+            <p class="text-2xl font-semibold">&commat; Bauchi Hall</p>
+            <a
+              href="#"
+              class="bg-blue-900 text-white p-2 font-semibold rounded-lg"
+              >Learn More</a
+            >
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer
+      class="mt-20 py-10 bg-gradient-to-br from-blue-950 via-blue-700 to-blue-200 text-white"
+    >
+      <div
+        class="container mx-auto flex flex-col items-center justify-between gap-14 p-8 md:flex-row md:items-start"
+      >
+        <img
+          src="./images/bamsa-logo.jpg"
+          alt="Bamsa Logo"
+          class="hidden lg:block h-52 w-52 rounded-full"
+        />
+        <!-- Logo and Social Media Icons -->
+        <div
+          class="flex flex-col items-center gap-10 justify-between md:items-start"
+        >
+          <h1 class="text-4xl xl:text-5xl font-bold">&#129658; BAMSA</h1>
+          <div class="flex items-center justify-between gap-4">
+            <a href="https://facebook.com">
+              <img src="./images/icons/facebook.png" alt="" class="h-8" />
+            </a>
+            <a href="https://gmail.com">
+              <img src="./images/icons/gmail.png" alt="" class="h-8" />
+            </a>
+            <a href="https://twitter.com">
+              <img src="./images/icons/twitter.png" alt="" class="h-8" />
+            </a>
+            <a href="https://instagram.com">
+              <img src="./images/icons/instagram.png" alt="" class="h-8" />
+            </a>
+            <a href="#">
+              <img src="./images/icons/phone-call.png" alt="" class="h-8" />
+            </a>
+          </div>
+        </div>
+        <div
+          id="contact"
+          class="scroll-mt-20 flex flex-col justify-between space-y-4 items-center md:items-start"
+        >
+          <p class="text-2xl font-semibold">We'd like to hear from you</p>
+          <form>
+            <div class="flex items-center justify-between space-x-4">
+              <div class="flex flex-col items-start justify-between space-y-2">
+                <label for="name" class="">Name:</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="full-name"
+                  class="rounded-lg p-0.5 max-w-36 sm:max-w-52"
+                  placeholder="Musa Hassan"
+                />
+              </div>
+              <div class="flex flex-col items-start justify-between space-y-2">
+                <label for="email" class="">Email:</label>
+                <input
+                  type="text"
+                  id="email"
+                  name="full-name"
+                  class="rounded-lg p-0.5 max-w-36 sm:max-w-52"
+                  placeholder="example@bamsa.com"
+                />
+              </div>
+            </div>
+            <div class="flex flex-col space-y-2 items-start justify-between">
+              <label for="message" class="mt-4">Your Message:</label>
+              <textarea
+                name="message"
+                id="message"
+                class="w-full rounded-xl h-20 p-2"
+                placeholder="your message"
+              ></textarea>
+            </div>
+            <button
+              class="block mx-auto text-white bg-blue-950 hover:bg-blue-800 mt-3 p-2 rounded-xl font-bold"
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
