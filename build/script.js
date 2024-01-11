@@ -8,10 +8,12 @@ menuBtn.onclick = () => {
 }
 
 const closeMenu = (e) => {
-    if (!menuBtn.contains(e.target) && !nav.contains(e.target)) {
-        menuBtn.classList.toggle('open');
-        nav.classList.toggle('flex');
-        nav.classList.toggle('hidden');
+    if(nav.classList.contains('flex')){
+        if (!menuBtn.contains(e.target) && !nav.contains(e.target)) {
+            menuBtn.classList.toggle('open');
+            nav.classList.toggle('flex');
+            nav.classList.toggle('hidden');
+        }
     }
 }
 
