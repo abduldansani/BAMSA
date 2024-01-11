@@ -7,6 +7,17 @@ menuBtn.onclick = () => {
     nav.classList.toggle('hidden');
 }
 
+const closeMenu = (e) => {
+    if (!menuBtn.contains(e.target) && !nav.contains(e.target)) {
+        menuBtn.classList.toggle('open');
+        nav.classList.toggle('flex');
+        nav.classList.toggle('hidden');
+    }
+}
+
+document.addEventListener('click', closeMenu);
+document.addEventListener('scroll', closeMenu);
+
 const customGreetings = [
     { greeting: "Good morning!", startTime: 5, endTime: 11 },
     { greeting: "Good afternoon!", startTime: 12, endTime: 16 },
