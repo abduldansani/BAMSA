@@ -46,7 +46,7 @@ export const exco = [
     },
     {
         surName: "BUBA",
-        firstName: "Hauwa Muhamad",
+        firstName: "Hauwa Mohammed",
         school: "ATBU",
         course: "MBBS",
         level: "600L",
@@ -58,14 +58,14 @@ export const exco = [
         firstName: "Aliyu",
         school: "ABU",
         course: "MBBS",
-        level: "500L",
+        level: "400L",
         rank: "Welfare Director",
         src: "./images/exco/welfare.jpg"
     },
     {
         surName: "YAU",
         firstName: "Muhammad",
-        school: "ATBU",
+        school: "UNIMAID",
         course: "BDS",
         level: "600L",
         rank: "PRO I",
@@ -81,9 +81,9 @@ export const exco = [
         src: "./images/exco/proII.jpg"
     },
     {
-        surName: "ABDULLAHI",
-        firstName: "Abdulhalim",
-        school: "ATBU",
+        surName: "AZI",
+        firstName: "Bamison Ishaku",
+        school: "UNIJOS",
         course: "MBBS",
         level: "600L",
         rank: "Director Social",

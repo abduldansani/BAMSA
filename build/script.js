@@ -64,7 +64,7 @@ for(let i = 0; i < exco.length; i++){
         ${member.surName}, ${member.firstName}
         </p>
         <p class="text-slate-500">${member.level} ${member.course} ${member.school}</p>
-        <p class="font-medium">Director of Sports</p>
+        <p class="font-medium">${member.rank}</p>
     </div>`;
 
     excoCardDiv.innerHTML += card;
