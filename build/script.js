@@ -1,3 +1,6 @@
+import { exco } from "./exco.js";
+
+// Toggle Menu
 const menuBtn = document.getElementById('menu_btn');
 const nav = document.getElementById('menu');
 
@@ -8,7 +11,7 @@ menuBtn.onclick = () => {
 }
 
 const closeMenu = (e) => {
-    if(nav.classList.contains('flex')){
+    if (nav.classList.contains('flex')) {
         if (!menuBtn.contains(e.target) && !nav.contains(e.target)) {
             menuBtn.classList.toggle('open');
             nav.classList.toggle('flex');
@@ -20,6 +23,8 @@ const closeMenu = (e) => {
 document.addEventListener('click', closeMenu);
 document.addEventListener('scroll', closeMenu);
 
+
+// Greetings
 const customGreetings = [
     { greeting: "Good morning!", startTime: 5, endTime: 11 },
     { greeting: "Good afternoon!", startTime: 12, endTime: 16 },
@@ -37,3 +42,30 @@ function getGreeting() {
 }
 
 document.getElementById('greeting').innerHTML = getGreeting();
+
+
+// Exco Cards
+const excoCardDiv = document.getElementById('exco_card');
+for(let i = 0; i < exco.length; i++){
+    let member = exco[i];
+    let card =
+    `<div
+    class="flex flex-col mb-4 p-6 w-full rounded-2xl mx-auto bg-slate-800 shadow-lg space-y-4 sm:flex-row md:flex-col lg:flex-row md:w-full"
+    >
+    <img
+        class="block mx-auto w-32 h-32 rounded-full mb-8 sm:mb-0 md:mb-8 lg:mb-0 sm:mx-0 sm:mr-4 md:mx-auto lg:mx-0 lg:mr-4 sm:shrink-0 bg-white"
+        src=${member.src}
+        alt=${member.firstName}, ${member.surName}
+    />
+    <div
+        class="space-y-3 text-center sm:text-left md:text-center lg:text-left"
+    >
+        <p class="text-xl font-semibold">
+        ${member.surName}, ${member.firstName}
+        </p>
+        <p class="text-slate-500">${member.level} ${member.course} ${member.school}</p>
+        <p class="font-medium">Director of Sports</p>
+    </div>`;
+
+    excoCardDiv.innerHTML += card;
+}
